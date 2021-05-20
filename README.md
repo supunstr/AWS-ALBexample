@@ -2,8 +2,8 @@
 # AWS-ALBexample
 
 First Instance
-#!/bin/bash
-yum install httpd -y
+#!/bin/bash;
+yum install httpd -y;
 systemctl enable httpd
 mkdir /var/www/html/orders/
 echo "<h1> This is Order App</h1>" > /var/www/html/orders/index.html
