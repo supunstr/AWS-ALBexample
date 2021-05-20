@@ -1,19 +1,27 @@
-.
-# AWS-ALBexample
+sudo apt-get update
+# For Sql-client
+sudo apt-get install mysql-client
 
-First Instance
-#!/bin/bash;
-yum install httpd -y;
-systemctl enable httpd
-mkdir /var/www/html/orders/
-echo "<h1> This is Order App</h1>" > /var/www/html/orders/index.html
-systemctl start httpd
+# For python and related frameworks
 
-Second instance
-#!/bin/bash
-yum install httpd -y
-systemctl enable httpd
-mkdir /var/www/html/bill/
-echo "<h1> This is Order App</h1>" > /var/www/html/bill/index.html
-systemctl start httpd
- 
+sudo apt-get install python3
+sudo apt-get install python3-flask
+sudo apt-get install python3-pymysql
+sudo apt-get install python3-boto3
+
+# for running application
+sudo python3 Empapp.py
+
+# DB creating 
+
+create database employee;
+use employee;
+
+create table employee(
+empid varchar(20),
+fname varchar(20),
+lname varchar(20),
+pri_skill varchar(20),
+location varchar(20));
+
+show tables;
